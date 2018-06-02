@@ -1,0 +1,50 @@
+{
+  "name": "parcel-preact-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "simple parcel preact typescript project without preact-compat",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "parcel watch index.html",
+    "build": "parcel build index.html",
+    "rebuild": "npm run clean && npm run build",
+    "clean": "rimraf dist/ && rimraf .cache",
+    "lint": "npm run tslint && npm run eslint",
+    "tslint": "tslint -c tslint.json -p tsconfig.json src/**/*.tsx?",
+    "eslint": "eslint src/**/*.jsx?"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benevolarX/parcel-preact-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "parcel",
+    "preact",
+    "typescript",
+    "boilerplate",
+    "project"
+  ],
+  "author": "benevolar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benevolarX/parcel-preact-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/benevolarX/parcel-preact-typescript-boilerplate#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^1.1.0",
+    "eslint": "^4.19.1",
+    "parcel-bundler": "^1.8.1",
+    "preact": "^8.2.9",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
