@@ -3,5 +3,6 @@ simple hello world project
 
 you can use preact-compat :
 
-npm i --only=dev preact-compat
-
+```bash
+$ npm i --only=dev preact-compat
+```
